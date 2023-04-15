@@ -1,0 +1,139 @@
+@font-face {
+    font-family: dave;
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+    font-family: dave1;
+    src: url(fonts/Rajdhani-Light.ttf);
+}
+
+@font-face{
+    font-family: dave2;
+    src: url(fonts/Tillana-SemiBold.ttf);
+}
+
+.main-header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.menu-heading {
+    align-self: center;
+    margin-left: 40px;
+    font-family: dave2, georgia;
+}
+
+.main-header ul {
+    align-self: center;
+}
+
+.main-header ul li {
+    display: inline-block;
+}
+
+.main-header ul li a {
+    color: #000;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: dave, georgia;
+}
+
+.main-header ul li a:hover {
+    color: red;
+}
+
+.landing-section {
+    width: 100%;
+    height: 500px;
+    background-image: url(images/4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-head {
+    text-align: center;
+    padding-top: 180px;
+    color: #fff;
+    font-size: 80px;
+    font-family: dave1;
+}
+
+.landing-buttons {
+    width: 20%;
+    height: 100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bttn-1 {
+    width: 150px;
+    height: 50px;
+    align-self: center; 
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buy-link {
+    align-self: center;
+}
+
+.buy-link a {
+    color: #fff;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder
+}
+
+.buy-link a:hover {
+    color: red;
+}
+
+
+
+
+
+
+/*RESPONSIVE STYLES*/ 
+
+@media screen and (max-width: 500px) {
+    .main-header ul {
+        display: none;
+    }
+
+    .landing-section {
+        height: 400px;
+    }
+
+    .landing-buttons {
+        width: 80%;
+    }
+
+    .landing-head {
+        padding-top: 150px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px) {
+    .landing-buttons {
+        width: 40%;
+    }
+}
+
+/*@media screen and (min-width: 970px) {
+    .landing-buttons {
+        width: 30%;
+    }
+}*/
+
